@@ -40,7 +40,6 @@ type StatsStruct struct {
 		Mem        []int     `json:"mem"`
 		Cputemp    []int     `json:"cputemp"`
 		Cpuavg     []float64 `json:"cpuavg"`
-		Jtemp      []int     `json:"jtemp"`
 		Miner      string    `json:"miner"`
 		TotalKhs   float64   `json:"total_khs"`
 		MinerStats struct {

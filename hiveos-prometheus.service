@@ -1,0 +1,13 @@
+[Unit]
+Description=Hiveos prometheus adaptor
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=nobody
+Group=nogroup
+Type=simple
+ExecStart=/usr/local/bin/hiveos-prometheus
+
+[Install]
+WantedBy=multi-user.target
